@@ -1,6 +1,6 @@
 # Selective Unlearning for Large Language Models
 
-This project implements and evaluates selective unlearning techniques for Large Language Models, specifically focusing on removing sensitive personal information while retaining other similar data patterns. The implementation uses the OLMO 7B model as a base architecture.
+This project implements and evaluates selective unlearning techniques for Large Language Models, specifically focusing on removing sensitive personal information while retaining other similar data patterns. The implementation fine-tunes a trained OLMO 7B model which has memorized sensitive information.
 
 ## Overview
 
@@ -63,8 +63,8 @@ The model was trained and evaluated using:
 │   ├── GA_only.py
 │   ├── GA_plus_KL_divergence.py
 │   └── GA_plus_GD.py
-├── loss_epochs.jpeg
-├── rouge_l_epochs.jpeg
+├── loss.png
+├── eval.png
 └── README.md
 ```
 
