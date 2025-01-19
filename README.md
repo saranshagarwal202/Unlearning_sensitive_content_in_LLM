@@ -29,14 +29,14 @@ Our main approach uses a combined loss function that simultaneously:
 
 The loss function is formally defined as:
 
-```
-L_{total} = -CE_{forget} + \alpha \cdot CE_{retain}
 
-where:
-CE_{forget} = Cross Entropy Loss on forget set
-CE_{retain} = Cross Entropy Loss on retain set
-\alpha = scaling parameter for retain loss
-```
+$$L_{total} = -CE_{forget} + \alpha \cdot CE_{retain}$$
+
+where:  
+$CE_{forget}$ = Cross Entropy Loss on forget set  
+$CE_{retain}$ = Cross Entropy Loss on retain set  
+$\alpha$ = scaling parameter for retain loss
+
 
 We minimize this combined loss function during training.
 
